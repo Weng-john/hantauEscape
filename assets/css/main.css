@@ -152,7 +152,7 @@
 
 /* Type */
 
-	body, input, select, textarea {
+	body, input, select {
 		color: #414f57;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 14pt;
@@ -160,6 +160,16 @@
 		line-height: 2;
 		letter-spacing: 0.2em;
 		text-transform: uppercase;
+	}
+
+textarea {
+		color: #414f57;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 14pt;
+		font-weight: 300;
+		line-height: 2;
+		letter-spacing: 0.2em;
+		text-transform: none;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -271,7 +281,7 @@
 	hr {
 		border: 0;
 		border-bottom: solid 1px #c8cccf;
-		margin: 3em 0;
+		margin: 1em 0;
 	}
 
 /* Form */
@@ -351,8 +361,8 @@
 	label {
 		color: #313f47;
 		display: block;
-		font-size: 0.9em;
-		margin: 0 0 0.75em 0;
+		font-size: 1.2em;
+		margin: 0.25em 0 0.25em 0;
 	}
 
 	input[type="text"],
@@ -373,6 +383,7 @@
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+        max-width: 100%;
 	}
 
 		input[type="text"]:invalid,
@@ -1053,3 +1064,15 @@
 		body.is-ie #wrapper {
 			height: 100%;
 		}
+
+
+.buttonArea{
+    width: 100%;
+    text-align: right;
+}
+
+.confirm{
+    background-color: #B9B9FF;
+    border-color: #B9B9FF;
+    text-align: right;
+}
