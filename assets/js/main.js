@@ -19,9 +19,8 @@ function Send(message, index){
             success: function(respond){
                 if(respond=="WA")
                     alert("發送的訊息是錯的喔！");
-                else{
+                else
                     location.href= respond;
-                }
             },
             error: function(XMLHttpRequest, textStatus, errorThrown){
                     alert("抱歉，學姊現在網路不好(;´༎ຶٹ༎ຶ`)\n等一下會重新傳送訊息~~~");
